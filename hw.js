@@ -53,9 +53,31 @@ console.log("Bodlogo6: ", fac6);
 
 //bodlogo7
 
-let a7 = 1234;
+let a7 = 123;
+let digit7 = 0;
+let sum7 = 0;
+while (a7 !== 0) {
+  digit7 = a7 % 10;
+  a7 = a7 - digit7;
+  a7 = a7 / 10;
+  sum7 = sum7 + digit7;
+}
+console.log("Bodlogo7: ", sum7);
 
 //bodlogo8
+
+let a8 = 1234;
+let digit8 = 0;
+let sum8 = 0;
+while (a8 !== 0) {
+  digit8 = a8 % 10;
+  a8 = a8 - digit8;
+  a8 = a8 / 10;
+  if (digit8 % 2 == 0) {
+    sum8 = sum8 + digit8;
+  }
+}
+console.log("Bodlogo8: ", sum8);
 
 //bodlogo9
 
@@ -76,3 +98,16 @@ for (let i = 2; i <= n9; i = i + 2) {
   sum10 = sum10 + i;
 }
 console.log("Bodlogo10: ", sum10);
+
+//bodlogo11
+
+let a11 = 123;
+let digit11 = 0;
+let sum11 = 0;
+while (a11 !== 0) {
+  digit11 = a11 % 10;
+  a11 = a11 - digit11;
+  a11 = a11 / 10;
+  sum11 = sum11 * 10 + digit11;
+}
+console.log("Bodlogo11: ", sum11);
